@@ -1,0 +1,55 @@
+﻿<Window x:Class="Magaz.ActionWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Magaz"
+        mc:Ignorable="d"
+        Title="ActionWin" 
+        Height="700" 
+        Width="1000"
+        WindowStartupLocation="CenterScreen" 
+        Background="#7284A8">
+        
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="1" 
+                Grid.Column="1" 
+                Background="White"/>
+        
+        <TextBlock Text="EStore"
+                   Margin="10 10"
+                   FontFamily="Comfortaa"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="25"/>
+        
+        <StackPanel Grid.Row="1">
+            <Button Width="120" Height="30" Content="Главная" Margin="5 0 5 10"/>
+            <Button Width="120" Height="30" Content="Бытовая техника" Margin="5"/>
+            <Button Width="120" Height="30" Content="Смартфоны" Margin="5"/>
+            <Button Width="120" Height="30" Content="ТВ и развлечения" Margin="5"/>
+            <Button Width="120" Height="30" Content="Компьютеры" Margin="5"/>
+            <Button Width="120" Height="30" Content="Офисная техника" Margin="5"/>
+            <Button Width="120" Height="30" Content="Аксессуары" Margin="5"/>
+        </StackPanel>
+
+        <ListView x:Name="ListProduct" 
+                  Grid.Row="1" 
+                  Grid.Column="1">
+            
+        </ListView>
+
+    </Grid>
+</Window>
